@@ -1,6 +1,6 @@
 <template>
   <div id="lava-out" class="border pb-12" @mouseover="trackMouse($event)">
-    <h1 class="text-4xl mb-12">Level {{ level }}</h1>
+    <h1 class="text-4xl mb-12 text-center">Level {{ level }}</h1>
 
   <div id="lava" class="flex justify-center" >
     <div id="progress-1" class="w-1/3 bg-black" style="width:150px; height:500px;"></div>

@@ -23,6 +23,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
+  linkExactActiveClass: "text-red-600 font-bold",
   base: process.env.BASE_URL,
   routes
 });

@@ -1,6 +1,6 @@
 <template>
   <div class="game border">
-    <div v-if="level > 0 && level < 6" id="stats" class="flex mb-12 text-4xl justify-between w-1/2 mx-auto">
+    <div v-if="!completed && level > 0" id="stats" class="flex mb-12 text-4xl justify-between w-1/2 mx-auto">
       <h1>Level {{ level }}</h1>
       <Timer :timer="timer" />
     </div>
@@ -10,7 +10,7 @@
     <LevelThree v-if="level === 3" />
     <LevelFour v-if="level === 4" />
     <LevelFive v-if="level === 5 && !completed" />
-    <GameComplete v-if="completed" />
+    <GameComplete :timer="timer" v-if="completed" />
   </div>
 </template>
 

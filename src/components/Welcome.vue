@@ -1,5 +1,5 @@
 <template>
-  <div class="border pb-12">
+  <div class="pb-12">
     <h1 class="text-4xl mb-12 text-center">Welcome to the Maze</h1>
 
   <div class="flex justify-center" >
@@ -20,20 +20,12 @@
 </template>
 
 <script>
-import {mapState} from 'vuex';
-
 export default {
   name: "Welcome",
   methods:{
     startGame(){
       this.$store.dispatch('updateLevel');
     }
-  },
-  computed: {
-    ...mapState(['score', 'level'])
-  },
+  }
 }
 </script>
-
-<style lang="css" scoped>
-</style>

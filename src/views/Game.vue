@@ -1,5 +1,7 @@
 <template>
-  <div class="game">
+  <div class="game border">
+    <h1 v-if="level > 0 && level < 6" class="text-4xl mb-12 text-center">Level {{ level }}</h1>
+
     <Welcome v-if="level === 0" />
     <LevelOne v-if="level === 1" />
     <LevelTwo v-if="level === 2" />

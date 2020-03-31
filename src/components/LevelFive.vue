@@ -1,6 +1,5 @@
 <template>
-  <div id="lava-out" class="border pb-12" @mouseover="trackMouse($event)">
-    <h1 class="text-4xl mb-12 text-center">Level {{ level }}</h1>
+  <div id="lava-out" class="pb-12" @mouseover="trackMouse($event)">
 
   <div id="lava" class="flex flex-col mx-auto" style="width:300px;">
     <div class="flex" style="height:20px;">
@@ -64,7 +63,6 @@
 </template>
 
 <script>
-import {mapState} from 'vuex';
 
 export default {
   name: "LevelFive",
@@ -82,13 +80,6 @@ export default {
       }
       console.log($event.target.id)
     }
-  },
-  computed: {
-    ...mapState(['score', 'level'])
-  },
-  mounted(){
-
   }
-
 };
 </script>

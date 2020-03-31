@@ -12,7 +12,6 @@
       <div id="escaped" class="bg-black" style="width:30px; height:20px;"></div>
     </div>
     <div class="flex" style="height:130px;">
-      <!-- <div id="progress-14" class="bg-black mt-auto" style="width:160px; height:10px;"></div> -->
       <div id="progress-21" class="bg-blue-400 h-full" style="width: 20px;"></div>
       <div id="progress-20" class="bg-black mt-auto" style="width:20px; height:20px;"></div>
       <div id="progress-19" class="bg-blue-400 h-full" style="width:20px;"></div>
@@ -34,16 +33,12 @@
       <div id="progress-5" class="bg-black mt-auto h-full" style="width:25px; margin-left: 40px;"></div>
     </div>
     <div class="flex" style="height:130px;">
-      <!-- <div id="progress-5" class="bg-black" style="width:220px; height:50px"></div>
-      <div id="progress-4" class="bg-black" style="width:270px; height:50px"></div> -->
       <div id="progress-2" class="bg-blue-400" style="width:30px; height:130px;"></div>
       <div id="progress-3" class="bg-black" style="width:50px; height:40px; margin-left: 120px;"></div>
       <div id="progress-4" class="bg-grey-700" style="width:65px; height:40px"></div>
     </div>
     <div class="flex" style="height:130px;">
       <div id="progress-1" class="bg-blue-400" style="width:30px; height:50px;"></div>
-      <!-- <div id="progress-2" class="bg-black" style="width:270px; height:50px"></div> -->
-      <!-- <div id="progress-3" class="bg-blue-400" style="width:50px; height:50px"></div> -->
     </div>
   </div>
 

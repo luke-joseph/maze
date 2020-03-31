@@ -32,6 +32,14 @@ export default new Vuex.Store({
       state.timer.active = false;
       state.completed = true;
     },
+    RESET_GAME(state) {
+      state.level = 0;
+      state.score = 0;
+      state.completed = false;
+      state.timer.seconds = 0;
+      state.timer.minutes = 0;
+      state.timer.active = false;
+    },
     UPDATE_TIMER(state) {
       if (state.timer.seconds < 59) {
         state.timer.seconds += 1;
@@ -62,10 +70,13 @@ export default new Vuex.Store({
     gameCompleted({ commit }) {
       commit("GAME_COMPLETED");
     },
+    resetGame({ commit }) {
+      commit("RESET_GAME");
+    },
     updateTimer({ state, commit, dispatch }) {
       setTimeout(() => {
-        commit("UPDATE_TIMER");
         if (state.timer.active) {
+          commit("UPDATE_TIMER");
           dispatch("updateTimer");
         }
       }, 1000);

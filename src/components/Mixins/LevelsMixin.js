@@ -11,6 +11,7 @@ export const LevelsMixin = {
         $event.target.id == ""
       ) {
         console.log("restart game & reset state");
+        this.$store.dispatch("gameOver");
       } else if ($event.target.id == "escaped") {
         this.nextLevel();
       }

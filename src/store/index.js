@@ -13,7 +13,8 @@ export default new Vuex.Store({
       minutes: 0,
       active: false
     },
-    completed: false
+    completed: false,
+    gameOver: false
   },
   mutations: {
     INCREMENT_SCORE(state, value) {
@@ -32,10 +33,19 @@ export default new Vuex.Store({
       state.timer.active = false;
       state.completed = true;
     },
+    GAME_OVER(state) {
+      state.level = 0;
+      state.score = 0;
+      state.timer.seconds = 0;
+      state.timer.minutes = 0;
+      state.gameOver = true;
+      state.timer.active = false;
+    },
     RESET_GAME(state) {
       state.level = 0;
       state.score = 0;
       state.completed = false;
+      state.gameOver = false;
       state.timer.seconds = 0;
       state.timer.minutes = 0;
       state.timer.active = false;
@@ -69,6 +79,9 @@ export default new Vuex.Store({
     },
     gameCompleted({ commit }) {
       commit("GAME_COMPLETED");
+    },
+    gameOver({ commit }) {
+      commit("GAME_OVER");
     },
     resetGame({ commit }) {
       commit("RESET_GAME");

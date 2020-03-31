@@ -4,13 +4,18 @@
       <h1>Level {{ level }}</h1>
       <Timer :timer="timer" />
     </div>
-    <Welcome v-if="level === 0" />
-    <LevelOne v-if="level === 1" />
-    <LevelTwo v-if="level === 2" />
-    <LevelThree v-if="level === 3" />
-    <LevelFour v-if="level === 4" />
-    <LevelFive v-if="level === 5 && !completed" />
-    <GameComplete :timer="timer" v-if="completed" />
+    <div v-if="!gameOver">
+      <Welcome v-if="level === 0" />
+      <LevelOne v-if="level === 1" />
+      <LevelTwo v-if="level === 2" />
+      <LevelThree v-if="level === 3" />
+      <LevelFour v-if="level === 4" />
+      <LevelFive v-if="level === 5 && !completed" />
+      <GameComplete :timer="timer" v-if="completed" />
+    </div>
+
+    <GameOver v-if="gameOver" />
+
   </div>
 </template>
 
@@ -25,6 +30,7 @@ import LevelThree from "@/components/LevelThree.vue";
 import LevelFour from "@/components/LevelFour.vue";
 import LevelFive from "@/components/LevelFive.vue";
 import GameComplete from "@/components/GameComplete.vue";
+import GameOver from "@/components/GameOver.vue";
 
 export default {
   name: "Game",
@@ -36,10 +42,11 @@ export default {
     LevelThree,
     LevelFour,
     LevelFive,
-    GameComplete
+    GameComplete,
+    GameOver
   },
   computed: {
-    ...mapState(["score", "level", "timer", "completed"])
+    ...mapState(["score", "level", "timer", "completed", "gameOver"])
   }
 };
 </script>

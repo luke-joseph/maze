@@ -7,11 +7,13 @@ export default new Vuex.Store({
   state: {
     score: 0,
     level: 0,
+    levelAmount: 5,
     timer: {
       seconds: 0,
       minutes: 0,
       active: false
-    }
+    },
+    completed: false
   },
   mutations: {
     INCREMENT_SCORE(state, value) {
@@ -25,6 +27,10 @@ export default new Vuex.Store({
     },
     STOP_TIMER(state) {
       state.timer.active = false;
+    },
+    GAME_COMPLETED(state) {
+      state.timer.active = false;
+      state.completed = true;
     },
     UPDATE_TIMER(state) {
       if (state.timer.seconds < 59) {
@@ -41,13 +47,20 @@ export default new Vuex.Store({
         commit("INCREMENT_SCORE", value);
       }
     },
-    updateLevel({ commit }) {
-      commit("INCREMENT_LEVEL");
+    updateLevel({ commit, state, dispatch }) {
+      if (state.levelAmount > state.level) {
+        commit("INCREMENT_LEVEL");
+      } else {
+        dispatch("gameCompleted");
+      }
     },
     startGame({ commit, dispatch }) {
       commit("START_TIMER");
       commit("INCREMENT_LEVEL");
       dispatch("updateTimer");
+    },
+    gameCompleted({ commit }) {
+      commit("GAME_COMPLETED");
     },
     updateTimer({ state, commit, dispatch }) {
       setTimeout(() => {

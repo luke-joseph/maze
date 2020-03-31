@@ -9,8 +9,8 @@
     <LevelTwo v-if="level === 2" />
     <LevelThree v-if="level === 3" />
     <LevelFour v-if="level === 4" />
-    <LevelFive v-if="level === 5" />
-    <GameComplete v-if="level === 6" />
+    <LevelFive v-if="level === 5 && !completed" />
+    <GameComplete v-if="completed" />
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
     GameComplete
   },
   computed: {
-    ...mapState(["score", "level", "timer"])
+    ...mapState(["score", "level", "timer", "completed"])
   }
 };
 </script>

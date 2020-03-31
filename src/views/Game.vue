@@ -5,7 +5,8 @@
     <LevelTwo v-if="level === 2" />
     <LevelThree v-if="level === 3" />
     <LevelFour v-if="level === 4" />
-    <GameComplete v-if="level === 5" />
+    <LevelFive v-if="level === 5" />
+    <GameComplete v-if="level === 6" />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import LevelOne from "@/components/LevelOne.vue";
 import LevelTwo from "@/components/LevelTwo.vue";
 import LevelThree from "@/components/LevelThree.vue";
 import LevelFour from "@/components/LevelFour.vue";
+import LevelFive from "@/components/LevelFive.vue";
 import GameComplete from "@/components/GameComplete.vue";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     LevelTwo,
     LevelThree,
     LevelFour,
+    LevelFive,
     GameComplete
   },
   computed: {

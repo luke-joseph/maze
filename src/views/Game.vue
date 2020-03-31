@@ -1,7 +1,9 @@
 <template>
   <div class="game border">
-    <h1 v-if="level > 0 && level < 6" class="text-4xl mb-12 text-center">Level {{ level }}</h1>
-
+    <div v-if="level > 0 && level < 6" id="stats" class="flex mb-12 text-4xl justify-between w-1/2 mx-auto">
+      <h1>Level {{ level }}</h1>
+      <Timer :timer="timer" />
+    </div>
     <Welcome v-if="level === 0" />
     <LevelOne v-if="level === 1" />
     <LevelTwo v-if="level === 2" />
@@ -16,6 +18,7 @@
 // @ is an alias to /src
 import {mapState} from "vuex";
 import Welcome from "@/components/Welcome.vue";
+import Timer from "@/components/Timer.vue";
 import LevelOne from "@/components/LevelOne.vue";
 import LevelTwo from "@/components/LevelTwo.vue";
 import LevelThree from "@/components/LevelThree.vue";
@@ -27,6 +30,7 @@ export default {
   name: "Game",
   components: {
     Welcome,
+    Timer,
     LevelOne,
     LevelTwo,
     LevelThree,
@@ -35,7 +39,21 @@ export default {
     GameComplete
   },
   computed: {
-    ...mapState(["score", "level"])
-  },
+    ...mapState(["score", "level", "timer"])
+  }
 };
 </script>
+
+<style media="screen">
+.cursor{
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position:absolute;
+  /* background-color: red; */
+}
+.game{
+  cursor: cell;
+}
+</style>

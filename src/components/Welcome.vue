@@ -24,7 +24,7 @@ export default {
   name: "Welcome",
   methods:{
     startGame(){
-      this.$store.dispatch('updateLevel');
+      this.$store.dispatch('startGame');
     }
   }
 }

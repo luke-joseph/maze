@@ -1,6 +1,6 @@
 <template>
   <div class="pb-12">
-    <h1 class="text-4xl mb-12 text-center">MUHAHAHAHAHA YOU FAILED</h1>
+    <img class="w-full h-full mb-12" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zombie_underworld_evil_face.jpg" alt="">
     <ResetGameButton>Play Again</ResetGameButton>
   </div>
 </template>

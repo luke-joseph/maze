@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-12">
+  <div class="pb-12 text-red-400">
     <h1 class="text-4xl text-center font-bold">You Defeated the Maze!</h1>
 
   <div id="completed-stats" class="mb-12">

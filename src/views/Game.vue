@@ -1,7 +1,7 @@
 <template>
   <div class="game border">
     <div v-if="!completed && level > 0" id="stats" class="flex mb-12 text-4xl justify-between w-1/2 mx-auto">
-      <h1>Level {{ level }}</h1>
+      <h1 class="text-red-400">Level {{ level }}</h1>
       <Timer :timer="timer" />
     </div>
     <div v-if="!gameOver">

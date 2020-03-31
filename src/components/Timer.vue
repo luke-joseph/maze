@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="text-red-400">
     {{ formattedTime }}
   </div>
 </template>

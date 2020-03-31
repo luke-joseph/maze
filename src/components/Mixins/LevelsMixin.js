@@ -4,13 +4,11 @@ export const LevelsMixin = {
       this.$store.dispatch("updateLevel");
     },
     trackMouse($event) {
-      console.log($event.target.id);
       if (
         $event.target.id == "lava" ||
         $event.target.id == "lava-out" ||
         $event.target.id == ""
       ) {
-        console.log("restart game & reset state");
         this.$store.dispatch("gameOver");
       } else if ($event.target.id == "escaped") {
         this.nextLevel();

@@ -20,6 +20,3 @@ export default {
   name: 'NavBar',
 }
 </script>
-
-<style lang="css" scoped>
-</style>

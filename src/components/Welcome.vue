@@ -1,6 +1,6 @@
 <template>
   <div class="pb-12">
-    <h1 class="creepy text-4xl mb-12 text-center text-red-400">Welcome to the Scary Maze</h1>
+    <h1 class="creepy text-5xl mb-12 text-center text-red-400">Welcome to the Scary Maze</h1>
 
     <div class="w-1/2 mx-auto" style="height: 50px;">
       <p class="text-white text-center text-2xl">In order to beat the maze keep your cursor inside the mazes path and reach the end of every level.</p>

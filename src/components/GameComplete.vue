@@ -1,10 +1,10 @@
 <template>
   <div class="pb-12 text-red-400">
-    <h1 class="text-4xl text-center font-bold mb-16">You Defeated the Maze!</h1>
+    <h1 class="text-5xl creepy text-center font-bold mb-16">You Defeated the Maze!</h1>
 
   <div id="completed-stats" class="mb-12">
-    <p class="text-center text-3xl">Congrats you beat the maze in:</p>
-    <p class="text-center text-3xl mb-8">{{ completedTime }}</p>
+    <p class="text-center text-3xl text-grey-100">Congrats you beat the maze in:</p>
+    <p class="text-center text-3xl mb-8 text-grey-100">{{ completedTime }}</p>
     <div class="flex items-center">
       <span :class="MedalStyle" class="rounded-full w-5 h-5 mr-2 ml-auto"></span>
       <span :class="MedalText" class="text-3xl mr-auto">You got the {{ medal }} medal</span>

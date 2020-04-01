@@ -10,7 +10,7 @@
 
     <div id="progress-1" class="w-1/3 bg-black text-white flex rounded-lg"
     @click="startGame"
-    style="width:150px; height:50px; margin-right: 150px; margin-top: 400px;">
+    style="width:150px; height:50px; margin-right: 150px; margin-top: 420px;">
 
     <p class="m-auto font-bold uppercase cursor-pointer p-4 bg-red-400 text-white tracking-wider uppercase">
       Start Game

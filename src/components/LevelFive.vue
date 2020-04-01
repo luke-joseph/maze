@@ -1,5 +1,5 @@
 <template>
-  <div id="lava-out" class="pb-12" @mouseover="trackMouse($event)">
+  <div id="lava-out" class="py-12" @mouseover="trackMouse($event)">
 
   <div id="lava" class="flex flex-col mx-auto" style="width:300px;">
     <div class="flex" style="height:20px;">

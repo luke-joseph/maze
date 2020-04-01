@@ -3,7 +3,10 @@
     <h1 class="creepy text-5xl mb-12 text-center text-red-400">Welcome to the Scary Maze</h1>
 
     <div class="w-1/2 mx-auto" style="height: 50px;">
-      <p class="text-white text-center text-2xl">In order to beat the maze keep your cursor inside the mazes path and reach the end of every level.</p>
+      <p class="text-white text-center text-2xl mb-12">In order to beat the maze:</p>
+      <p class="text-white text-center text-2xl">1. Keep your cursor inside the mazes path</p>
+      <p class="text-white text-center text-2xl mb-12">2. Reach the end of every level.</p>
+      <img class="mx-auto" src="@/assets/images/demo.jpg" alt="">
     </div>
 
   <div class="flex justify-center" >

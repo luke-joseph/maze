@@ -7,7 +7,7 @@
       :src="audio.src"
       preload="auto">
      </audio>
-    <img class="w-full h-full mb-12" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zombie_underworld_evil_face.jpg" alt="">
+    <img class="w-full h-full mb-12" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zombie_underworld_evil_face.jpg" alt="scary zombie picture">
     <ResetGameButton>Play Again</ResetGameButton>
   </div>
 </template>

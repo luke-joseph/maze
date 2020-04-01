@@ -4,7 +4,7 @@
       style="display: none"
       id="my-audio"
       ref="audio"
-      :src="audio.src"
+      src="@/assets/scream.mp3"
       preload="auto">
      </audio>
     <img class="w-full h-full mb-12" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zombie_underworld_evil_face.jpg" alt="scary zombie picture">
@@ -19,13 +19,6 @@ export default {
   name: "GameOver",
   components:{
     ResetGameButton
-  },
-  data(){
-    return{
-      audio:{
-        src: 'https://trackwire.s3.us-east-2.amazonaws.com/freelance/scarymaze/scream.mp3'
-      }
-    }
   },
   methods:{
     startGame(){

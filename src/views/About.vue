@@ -1,5 +1,8 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="text-center about text-grey-300 w-1/2">
+    <h1 class="text-3xl font-bold tracking-wide mb-12">About The Scary Maze</h1>
+    <p class="mb-4 text-grey-500">This game was made just for fun by <a class="text-red-300 underline hover:text-red-400" href="https://lukejoseph.dev">Luke Joseph</a></p>
+    <p class="mb-4 text-grey-500">This game was built with Vue & Vuex</p>
+    <p class="mb-4 text-grey-500">To see the code for this game visit <a class="text-red-300 underline hover:text-red-400" href="https://github.com">github repo</a></p>
   </div>
 </template>

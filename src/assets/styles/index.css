@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.creepy {
 font-family: 'Creepster', cursive;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
 }

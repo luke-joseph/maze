@@ -58,7 +58,6 @@ export default {
   border: 1px solid red;
   border-radius: 50%;
   position:absolute;
-  /* background-color: red; */
 }
 .game{
   cursor: cell;

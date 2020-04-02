@@ -20,8 +20,4 @@ export default{
   .router-link-exact-active{
     color: blue;
   }
-  #lava-out{
-    /* background: url("https://media.giphy.com/media/3oKIPaGG4PDQgQDFZe/giphy.gif") no-repeat;
-    background-size: cover; */
-  }
 </style>

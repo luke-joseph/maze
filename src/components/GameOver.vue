@@ -7,7 +7,7 @@
       src="@/assets/scream.mp3"
       preload="auto">
      </audio>
-    <img class="w-full h-full mb-12" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zombie_underworld_evil_face.jpg" alt="scary zombie picture">
+    <img class="w-full h-full mb-12" src="https://i.ytimg.com/vi/RNoHcWE8tbQ/maxresdefault.jpg" alt="scary zombie picture">
     <ResetGameButton>Play Again</ResetGameButton>
   </div>
 </template>

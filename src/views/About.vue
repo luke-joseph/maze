@@ -5,3 +5,12 @@
     <p class="mb-4 text-grey-500 text-xl">To see the code for this game visit the <a class="text-red-300 underline hover:text-red-400" href="https://github.com/luke-joseph/maze">github repo</a></p>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    // Reset the game...
+    this.$store.dispatch("resetGame");
+  }
+};
+</script>
